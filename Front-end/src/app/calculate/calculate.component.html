@@ -1,0 +1,40 @@
+<div class="screen">
+    <h1 class="alert-info">Історія операцій оновлюється лише після перезагрузки сторінки!</h1>
+    <div class="content">
+        <h2 class="line">{{digit}}</h2>
+        <h2 class="line2">Історія операцій</h2>
+        <div class="calculate">
+            <div class="row">
+                <div class="btn">
+                    <button (click)="add(7)" class="btn-wh">7</button>
+                    <button (click)="add(8)" class="btn-wh">8</button>
+                    <button (click)="add(9)" class="btn-wh">9</button>
+                    <button (click)="plus()" class="btn-wh">+</button>
+                </div>
+                <div class="btn">
+                    <button (click)="add(4)" class="btn-wh">4</button>
+                    <button (click)="add(5)" class="btn-wh">5</button>
+                    <button (click)="add(6)" class="btn-wh">6</button>
+                    <button (click)="minus()" class="btn-wh">-</button>
+                </div>
+                <div class="btn">
+                    <button (click)="add(1)" class="btn-wh">1</button>
+                    <button (click)="add(2)" class="btn-wh">2</button>
+                    <button (click)="add(3)" class="btn-wh">3</button>
+                    <button (click)="mulp()" class="btn-wh">*</button>
+                </div>
+                <div class="btn">
+                    <button (click)="add(0)" class="btn-wh">0</button>
+                    <button (click)="clean()" class="btn-wh">Очистити</button>
+                    <button (click)="sum_end()"class="btn-wh">Сума</button>
+                    <button (click)="div()" class="btn-wh">/</button>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div *ngFor="let i of line">
+                <p>{{i.vyraz}}</p>
+            </div>
+        </div>
+    </div>
+</div>

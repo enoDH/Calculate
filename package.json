@@ -1,0 +1,21 @@
+{
+  "name": "calculate",
+  "version": "1.0.0",
+  "description": "\"Program for Cloud machine\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "oleh ozhelevskyi <s.t.a.l.k.e.r.ys.o.s@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2"
+  }
+}

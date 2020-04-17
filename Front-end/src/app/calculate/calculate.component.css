@@ -1,0 +1,51 @@
+.alert-info{
+    text-align: center;
+    color: #ffffff;
+    background: #fe4a49;
+}
+
+.content{
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.calculate{
+    width: 320px;
+}
+
+.line{
+    border-bottom: 4px solid springgreen;
+    width: 320px;
+    display: inline-block;
+}
+
+.line2{
+    border-bottom: 4px solid red;
+    width: 320px;
+    display: inline-block;
+    margin-left: 6.6%;
+    padding-left: auto;
+    text-align: center;
+}
+
+.row{
+    float: left;
+}
+
+.btn{
+    padding-bottom: 10px;
+}
+
+.btn-wh{
+    width: 80px;
+    height: 50px;
+}
+
+.history{
+    padding-left: auto;
+    margin-left: 5%;
+    width: 320px;
+    height: 230px;
+    position: absolute;
+    display: inline-block;
+}
