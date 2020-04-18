@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class CalculateService {
 
-  public urlAPI: string = 'http://localhost:3000/api/';
+  public urlAPI: string = '/api/';
   public httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'

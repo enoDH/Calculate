@@ -2,6 +2,7 @@ let express = require('express')
 let mongoose = require('mongoose')
 let bodyParser = require('body-parser')
 const CONFIG = require('./config/config')
+let path = require('path');
 let cors = require('cors')
 
 async function run(){
@@ -17,9 +18,14 @@ async function run(){
             () =>{ console.log("Connection succesful!")},
             error => { console.log("Connection failed!")}
             );
-        
+
         app.use('/api/', require('./route/calculate.route'))
-        app.listen(CONFIG.port, () =>{
+        app.use('/', express.static(path.join(__dirname, 'Front-end', 'dist', 'Front-end' )))
+        app.get('*', (req, res) => {
+            res.sendFile(path.resolve(__dirname, 'Front-end', 'dist', 'Front-end', 'index.html'))
+        })
+
+        app.listen(CONFIG.port || process.env.PORT , () =>{
             console.log('Server has been running on port ' + CONFIG.port)
         })
     }
